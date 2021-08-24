@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteRule  ^img/(.+)$ /onedrive/index.php?path=$1
+#RewriteRule  ^d/(.+)\.html$ /detail.php?id=$1 
+#RewriteRule  ^a/(.+)$ /about.php?ac=$1 
+
+#RewriteRule ^a/([0-9]+)$ about.php?ac=$1
