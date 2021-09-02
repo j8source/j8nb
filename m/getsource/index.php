@@ -2,6 +2,8 @@
 //先把快手地址导入数据库表中ok_source 
 //读取表中的url获取视频并保存到本地
 set_time_limit(0);
+//取得当前所在目录
+define('SITE_ROOT', str_replace('index.php', '', str_replace('\\', '/', __FILE__)));
 //链接数据库
 $conn = new mysqli('localhost', 'root', '123456', 'j8nb');
 $conn->query("SET NAMES utf8");	
